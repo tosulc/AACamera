@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:text="AACamera" />
+
+    <Button
+        android:id="@+id/btn_pick_color_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_scan_color"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="Pick color" />
+
+    <Button
+        android:id="@+id/btn_scan_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="144dp"
+        android:layout_toLeftOf="@+id/textView1"
+        android:text="Scan for color" />
+
+    <Button
+        android:id="@+id/btn_color_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="42dp"
+        android:layout_toRightOf="@+id/btn_scan_color"
+        android:text="Color picker?!" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Odabrana boja: " />
+
+    <ImageView
+        android:id="@+id/iv_picked_color"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView2" />
+
+</RelativeLayout>
